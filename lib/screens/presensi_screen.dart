@@ -13,7 +13,9 @@ class PresensiView extends GetView<PresensiController> {
       appBar: AppBar(
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed(Routes.notifikasi);
+            },
             icon: const Icon(Icons.notifications),
             color: Colors.white,
           ),

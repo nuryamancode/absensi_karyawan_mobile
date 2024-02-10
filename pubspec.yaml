@@ -79,6 +79,7 @@ flutter:
     - assets/image/ilus3.png
     - assets/image/ilus4.png
     - assets/image/logo.png
+    - assets/image/logo-black.png
     - assets/image/logout.png
     - assets/image/personalinfo.png
     - assets/image/resetpassword.png

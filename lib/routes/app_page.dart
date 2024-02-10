@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import '../bindings/agenda_bindings.dart';
 import '../bindings/bottom_nav_bindings.dart';
+import '../bindings/notifikasi_bindings.dart';
 import '../bindings/presensi_bindings.dart';
 import '../bindings/lokasi_bindings.dart';
 import '../bindings/login_bindings.dart';
@@ -10,6 +11,7 @@ import '../screens/gantipassword_screen.dart';
 import '../screens/informasipribadi_screen.dart';
 import '../screens/login_screen.dart';
 import '../screens/lokasi_screen.dart';
+import '../screens/notifikasi_screen.dart';
 import '../screens/presensi_screen.dart';
 import '../screens/selfie_screen.dart';
 import '../screens/splash_screen.dart';
@@ -82,6 +84,13 @@ class AppPages {
       // transition: Transition.fade
       // transitionDuration: Duration(milliseconds: 2)
     ),
+    GetPage(
+      name: _Paths.notifikasi,
+      page: () =>  const NotifikasiView(),
+      binding: NotifikasiBinding(),
+      // transition: Transition.fade
+      // transitionDuration: Duration(milliseconds: 2)
+    ),
   ];
 }
 
@@ -96,6 +105,7 @@ abstract class Routes {
   static const password= _Paths.password;
   static const bottom = _Paths.bottom;
   static const login = _Paths.login;
+  static const notifikasi = _Paths.notifikasi;
 }
 
 abstract class _Paths {
@@ -109,5 +119,6 @@ abstract class _Paths {
   static const lokasi = '/lokasi';
   static const password = '/password';
   static const splash = '/splash';
+  static const notifikasi = '/notifikasi';
   static const login = '/login';
 }
